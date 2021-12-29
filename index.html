@@ -41,7 +41,7 @@
     <!-- gnb_mobile d-none -->
     <div class="gnb_m container-fluid h-100">
         <ul>
-            <li><a href="index.html" class="alert-link px-3 d-block text-center p-2">home</a></li>
+            <!-- <li><a href="index.html" class="alert-link px-3 d-block text-center p-2">home</a></li> -->
             <li><a href="portfolio.html" class="alert-link px-3 d-block text-center p-2">porfolio</a></li>
             <li><a href="about.html" class="alert-link px-3 d-block text-center p-2">about</a></li>
         </ul>
@@ -82,17 +82,18 @@
             <!-- gird item1 -->
             <div id="site1" class="col-12 grid-item g1">
                 <div class="row h-100">
-                    <div class="col-md-7 item_img_wrap">
+                    <div class="col-md-6 item_img_wrap">
                         <a href="http://coin-chart-vue.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
-                            <img class="w-100" src="images/portfolio_site1.png" alt="item1_img">
+                            <img class="w-100" src="images/coin_chart.png" alt="item1_img">
                         </a>
                     </div>
-                    <div class="col-md-5 item_txt_wrap">
+                    <div class="col-md-6 item_txt_wrap">
                         <ul>
                             <li>
                                 <h3>Coin Chart</h3>
                             </li>
                             <li>vue.js를 이용하여 만들었습니다.</li>
+                            <li>element ui라는 UI Library를 사용하여 레이아웃을 제작했습니다.</li>
                             <li>cryptocompare의 api를 이용하여 실제 거래소 정보를 사용했습니다.</li>
                             <li>axios를 사용하여 cryptocompare Api 서버와 통신하였습니다.</li>
                             <li>websockets을 이용하여 실시간 trade 가격을 불러옵니다.</li>
@@ -101,8 +102,9 @@
                                 <a class="btn btn-dark"
                                     href="http://coin-chart-vue.s3-website.ap-northeast-2.amazonaws.com/"
                                     target="_blank">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="1">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/coin-chart.git">github</a>
+                                <!-- <a class="btn btn-dark detailBtn" href="#" detailEq="1">detail</a> -->
+                                <a class="btn btn-dark" href="https://github.com/jjd369/coin-chart.git"
+                                    target="_blank">github</a>
                                 <a class="btn btn-dark" href="#" itemEq="1">이전으로</a>
                             </li>
                         </ul>
@@ -112,38 +114,41 @@
             <!-- gird item2 -->
             <div id="site2" class="col-12 grid-item g1">
                 <div class="row row-cols-1 row-cols-md-2 h-100 d-none d-md-flex">
-                    <div class="col-md-5 item_txt_wrap">
+                    <div class="col-md-6 item_txt_wrap">
                         <ul>
                             <li>
                                 <h3>My board</h3>
                             </li>
                             <li>vue.js와 node.js 그리고 mongoDb를 사용하였습니다.</li>
+                            <li>element ui라는 UI Library를 사용하여 레이아웃을 제작했습니다.</li>
                             <li>jwt token을 이용하여 로그인 및 회원가입을 구현했습니다.</li>
-                            <li>heroku를 이용하여 배포하여 처음 접속 시 오래 걸릴 수 있습니다.</li>
                             <li>게시물의 첨부파일과 프로필 이미지는 aws s3에 저장됩니다.</li>
+                            <li class="text-danger">heroku를 이용하여 배포하여 처음 접속 시 오래 걸릴 수 있습니다.
+                            </li>
                             <li>
                                 <a class="btn btn-dark" href="https://app-my-board.herokuapp.com/"
                                     target="_blank">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="2">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/heungkuk.git">github</a>
+                                <!-- <a class="btn btn-dark detailBtn" href="#" detailEq="2">detail</a> -->
+                                <a class="btn btn-dark" href="https://github.com/jjd369/heungkuk.git"
+                                    target="_blank">github</a>
                                 <a class="btn btn-dark" href="#" itemEq="2">이전으로</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-7 item_img_wrap">
+                    <div class="col-md-6 item_img_wrap">
                         <a href="#" target="_blank">
-                            <img class="w-100" src="images/portfolio_site2.png" alt="item2_img">
+                            <img class="w-100" src="images/board.png" alt="item2_img">
                         </a>
                     </div>
                 </div>
                 <!-- mobile -->
                 <div class="row row-cols-1 row-cols-md-2 h-100 d-md-none">
-                    <div class="col-md-7 item_img_wrap">
+                    <div class="col-md-6 item_img_wrap">
                         <a href="#" target="_blank">
-                            <img class="w-100" src="images/portfolio_site2.png" alt="item2_img">
+                            <img class="w-100" src="images/board.png" alt="item2_img">
                         </a>
                     </div>
-                    <div class="col-md-5 item_txt_wrap">
+                    <div class="col-md-6 item_txt_wrap">
                         <ul>
                             <li>
                                 <h3>My board</h3>
@@ -155,88 +160,9 @@
                             <li>
                                 <a class="btn btn-dark" href="http://ghana369.dothome.co.kr/site2/"
                                     target="_blank">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="2">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/heungkuk.git">github</a>
-                                <a class="btn btn-dark" href="#" itemEq="2">이전으로</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- gird item1 -->
-            <div id="site2" class="col-12 grid-item g1">
-                <div class="row h-100">
-                    <div class="col-md-7 item_img_wrap">
-                        <a href="http://ghana369.dothome.co.kr/site1/index.html" target="_blank">
-                            <img class="w-100" src="images/portfolio_site1.png" alt="item1_img">
-                        </a>
-                    </div>
-                    <div class="col-md-5 item_txt_wrap">
-                        <ul>
-                            <li>
-                                <h3>한국항로표지기술원</h3>
-                            </li>
-                            <li>익스플로러 8까지의 호환성을 고려했습니다.</li>
-                            <li>메인페이지와 다양한 서브페이지 구현했습니다.</li>
-                            <li>js/jquery를 이용하여 다양한 동작들 구현했습니다.</li>
-                            <li>
-                                <a class="btn btn-dark" href="https://jjd369.github.io/katon/" target="_blank">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="1">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/katon.git">github</a>
-                                <a class="btn btn-dark" href="#" itemEq="1">이전으로</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- gird item3 -->
-            <div id="site3" class="col-12 grid-item g3">
-                <div class="row row-cols-1 row-cols-md-2 h-100 d-none d-md-flex">
-                    <div class="col-md-5 item_txt_wrap">
-                        <ul>
-                            <li>
-                                <h3>흥국생명</h3>
-                            </li>
-                            <li>반응형 페이지로 제작했습니다.</li>
-                            <li>breakpoint는 1200px, 1000px ,768px입니다.</li>
-                            <li>기존의 로고의 색상과 어울리는 색상배합으로 구성했습니다.</li>
-                            <li>js/jquery를 이용하여 gnb메뉴와 슬라이드를 구현했습니다.</li>
-                            <li>
-                                <a class="btn btn-dark" href="https://jjd369.github.io/heungkuk/"
-                                    target="_blank">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="2">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/heungkuk.git">github</a>
-                                <a class="btn btn-dark" href="#" itemEq="2">이전으로</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-7 item_img_wrap">
-                        <a href="#" target="_blank">
-                            <img class="w-100" src="images/portfolio_site2.png" alt="item2_img">
-                        </a>
-                    </div>
-                </div>
-                <!-- mobile -->
-                <div class="row row-cols-1 row-cols-md-2 h-100 d-md-none">
-                    <div class="col-md-7 item_img_wrap">
-                        <a href="#" target="_blank">
-                            <img class="w-100" src="images/portfolio_site2.png" alt="item2_img">
-                        </a>
-                    </div>
-                    <div class="col-md-5 item_txt_wrap">
-                        <ul>
-                            <li>
-                                <h3>흥국생명</h3>
-                            </li>
-                            <li>반응형 페이지로 제작했습니다.</li>
-                            <li>breakpoint는 1200px, 1000px ,768px입니다.</li>
-                            <li>기존의 로고의 색상과 어울리는 색상배합으로 구성했습니다.</li>
-                            <li>js/jquery를 이용하여 gnb메뉴와 슬라이드를 구현했습니다.</li>
-                            <li>
-                                <a class="btn btn-dark" href="http://ghana369.dothome.co.kr/site2/"
-                                    target="_blank">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="2">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/heungkuk.git">github</a>
+                                <!-- <a class="btn btn-dark detailBtn" href="#" detailEq="2">detail</a> -->
+                                <a class="btn btn-dark" href="https://github.com/jjd369/heungkuk.git"
+                                    target="_blank">github</a>
                                 <a class="btn btn-dark" href="#" itemEq="2">이전으로</a>
                             </li>
                         </ul>
@@ -246,12 +172,12 @@
             <!-- gird item4 -->
             <div id="site4" class="col-12 grid-item g2">
                 <div class="row row-cols-1 row-cols-md-2 h-100">
-                    <div class="col-md-7 item_img_wrap">
+                    <div class="col-md-6 item_img_wrap">
                         <a href="#" target="_blank">
                             <img class="w-100" src="images/portfolio_site3.png" alt="item3_img">
                         </a>
                     </div>
-                    <div class="col-md-5 item_txt_wrap">
+                    <div class="col-md-6 item_txt_wrap">
                         <ul>
                             <li>
                                 <h3>맘스터치</h3>
@@ -260,89 +186,99 @@
                             <li>메인페이지와 다양한 서브페이지들을 제작했습니다.</li>
                             <li>타사의 모바일 홈페이지와 비슷한 구성요소로 구성했습니다.</li>
                             <li>js/jquery를 이용하여 다양한 동작들 구현했습니다.</li>
+                            <li>퍼블리싱으로 기능들은 구현하지 않았습니다.</li>
                             <li>
                                 <a class="btn btn-dark moms" href="https://jjd369.github.io/moms/">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="3">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/moms.git">github</a>
+                                <!-- <a class="btn btn-dark detailBtn" href="#" detailEq="3">detail</a> -->
+                                <a class="btn btn-dark" href="https://github.com/jjd369/moms.git"
+                                    target="_blank">github</a>
                                 <a class="btn btn-dark" href="#" itemEq="3">이전으로</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <!-- gird item5-->
-            <div id="site5" class="col-12 grid-item g3">
-                <div class="row row-cols-1 row-cols-md-2 h-100 d-none d-md-flex">
-                    <div class="col-md-5 item_txt_wrap">
-                        <ul>
-                            <li>
-                                <h3>맘스터치 메뉴 리스트 vue </h3>
-                            </li>
-                            <li>맘스터치의 메뉴 리스트를 vue를 통해서 재구성했습니다.</li>
-                            <li>MYSQl를 이용하여 데이터베이스를 가져와 출력했습니다.</li>
-                            <li>웹페이지 내에서 데이터베이스를 변경하거나 추가,제거 할 수 있습니다.</li>
-                            <li>
-                                <a class="btn btn-dark" href="http://ghana369.dothome.co.kr/moms_vue/index.html"
-                                    target="_blank">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="4">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/moms_vue.git">github</a>
-                                <a class="btn btn-dark" href="#" itemEq="4">이전으로</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-7 item_img_wrap">
-                        <a href="#" target="_blank">
-                            <img class="w-100" src="images/portfolio_site4.png" alt="item4_img">
+            <!-- gird item1 -->
+            <div id="site2" class="col-12 grid-item g1">
+                <div class="row h-100">
+                    <div class="col-md-6 item_img_wrap">
+                        <a href="http://ghana369.dothome.co.kr/site1/index.html" target="_blank">
+                            <img class="w-100" src="images/portfolio_site1.png" alt="item1_img">
                         </a>
                     </div>
-                </div>
-                <!-- mobile -->
-                <div class="row row-cols-1 row-cols-md-2 h-100 d-md-none">
-                    <div class="col-md-7 item_img_wrap">
-                        <a href="#" target="_blank">
-                            <img class="w-100" src="images/portfolio_site4.png" alt="item4_img">
-                        </a>
-                    </div>
-                    <div class="col-md-5 item_txt_wrap">
+                    <div class="col-md-6 item_txt_wrap">
                         <ul>
                             <li>
-                                <h3>맘스터치 메뉴 리스트 vue </h3>
+                                <h3>한국항로표지기술원</h3>
                             </li>
-                            <li>맘스터치의 메뉴 리스트를 vue를 통해서 재구성했습니다.</li>
-                            <li>MYSQl를 이용하여 데이터베이스를 가져와 출력했습니다.</li>
-                            <li>웹페이지 내에서 데이터베이스를 변경하거나 추가,제거 할 수 있습니다.</li>
+                            <li>익스플로러 8까지의 호환성을 고려했습니다.</li>
+                            <li>메인페이지와 다양한 서브페이지 구현했습니다.</li>
+                            <li>js/jquery를 이용하여 다양한 동작들 구현했습니다.</li>
+                            <li>퍼블리싱으로 기능들은 구현하지 않았습니다.</li>
                             <li>
-                                <a class="btn btn-dark" href="http://ghana369.dothome.co.kr/moms_vue/index.html"
-                                    target="_blank">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="4">detail</a>
-                                <a class="btn btn-dark" href="https://github.com/jjd369/moms_vue.git">github</a>
-                                <a class="btn btn-dark" href="#" itemEq="4">이전으로</a>
+                                <a class="btn btn-dark" href="https://jjd369.github.io/katon/" target="_blank">Site</a>
+                                <!-- <a class="btn btn-dark detailBtn" href="#" detailEq="1">detail</a> -->
+                                <a class="btn btn-dark" href="https://github.com/jjd369/katon.git"
+                                    target="_blank">github</a>
+                                <a class="btn btn-dark" href="#" itemEq="1">이전으로</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <!-- gird item6 -->
-            <div id="site6" class="col-12 grid-item g1">
-                <div class="row row-cols-1 row-cols-md-2 h-100">
-                    <div class="col-md-7 item_img_wrap">
-                        <a href="#" target="_blank">
-                            <img class="w-100" src="images/portfolio_site5.png" alt="item5_img">
-                        </a>
-                    </div>
-                    <div class="col-md-5 item_txt_wrap">
+            <!-- gird item3 -->
+            <div id="site3" class="col-12 grid-item g3">
+                <div class="row row-cols-1 row-cols-md-2 h-100 d-none d-md-flex">
+                    <div class="col-md-6 item_txt_wrap">
                         <ul>
                             <li>
-                                <h3>PORTFOLIO</h3>
+                                <h3>흥국생명</h3>
                             </li>
-                            <li>반응형 페이지로 만든 포트폴리오 페이지입니다.</li>
-                            <li>다양한 동작과 효과를 플러그인과 jquery로 구현했습니다.</li>
-                            <li>swiper, bootstrap, bootstrap..사용</li>
+                            <li>반응형 페이지로 제작했습니다.</li>
+                            <li>breakpoint는 1200px, 1000px ,768px입니다.</li>
+                            <li>기존의 로고의 색상과 어울리는 색상배합으로 구성했습니다.</li>
+                            <li>js/jquery를 이용하여 gnb메뉴와 슬라이드를 구현했습니다.</li>
+                            <li>퍼블리싱으로 기능들은 구현하지 않았습니다.</li>
                             <li>
-                                <a class="btn btn-dark" href="#">Site</a>
-                                <a class="btn btn-dark detailBtn" href="#" detailEq="5">detail</a>
-                                <a class="btn btn-dark" href="#">github</a>
-                                <a class="btn btn-dark" href="#" itemEq="5">이전으로</a>
+                                <a class="btn btn-dark" href="https://jjd369.github.io/heungkuk/"
+                                    target="_blank">Site</a>
+                                <!-- <a class="btn btn-dark detailBtn" href="#" detailEq="2">detail</a> -->
+                                <a class="btn btn-dark" href="https://github.com/jjd369/heungkuk.git"
+                                    target="_blank">github</a>
+                                <a class="btn btn-dark" href="#" itemEq="2">이전으로</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item_img_wrap">
+                        <a href="#" target="_blank">
+                            <img class="w-100" src="images/portfolio_site2.png" alt="item2_img">
+                        </a>
+                    </div>
+                </div>
+                <!-- mobile -->
+                <div class="row row-cols-1 row-cols-md-2 h-100 d-md-none">
+                    <div class="col-md-6 item_img_wrap">
+                        <a href="#" target="_blank">
+                            <img class="w-100" src="images/portfolio_site2.png" alt="item2_img">
+                        </a>
+                    </div>
+                    <div class="col-md-6 item_txt_wrap">
+                        <ul>
+                            <li>
+                                <h3>흥국생명</h3>
+                            </li>
+                            <li>반응형 페이지로 제작했습니다.</li>
+                            <li>breakpoint는 1200px, 1000px ,768px입니다.</li>
+                            <li>기존의 로고의 색상과 어울리는 색상배합으로 구성했습니다.</li>
+                            <li>js/jquery를 이용하여 gnb메뉴와 슬라이드를 구현했습니다.</li>
+                            <li>퍼블리싱으로 기능들은 구현하지 않았습니다.</li>
+                            <li>
+                                <a class="btn btn-dark" href="http://ghana369.dothome.co.kr/site2/"
+                                    target="_blank">Site</a>
+                                <!-- <a class="btn btn-dark detailBtn" href="#" detailEq="2">detail</a> -->
+                                <a class="btn btn-dark" href="https://github.com/jjd369/heungkuk.git"
+                                    target="_blank">github</a>
+                                <a class="btn btn-dark" href="#" itemEq="2">이전으로</a>
                             </li>
                         </ul>
                     </div>
